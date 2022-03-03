@@ -1,0 +1,330 @@
+การขึ้นโปรเจ็กต์ React.JS
+---
+Step 1: คำสั่งขึ้นโปรเจ็กต์
+---
+กรณีใช้ npm
+npx create-react-app react-layout
+
+กรณีใช้ yarn
+yarn create react-app first-reat-app
+
+Step 2: เปลี่ยน path เข้าโปรเจ็กต์
+---
+cd react-layout
+
+Step 3: เปิดขึ้น VS Code
+---
+code  -r  .
+
+Step 4: ทำการ Run Project
+---
+npm start
+
+ตัวโปรเจ็กต์จะรันอยู่ที่ http://localhost:3000
+
+Step 5: ติดตั้ง bootstrap css
+---
+npm i bootstrap@5.1.x
+
+Step 6: ติดตั้ง react-router-dom
+---
+npm i react-router-dom@6.2.x
+
+Step 7: ติดตั้ง react-document-title
+---
+npm i react-document-title@2.0.x
+
+Step 8: ทำการ Build Project
+---
+npm run build
+
+Step 9: ติดตั้ง lib ชื่อ serve ไว้ทดสอบรันโปรเจ็กต์ที่ build เสร็จแล้ว
+---
+npm i -g serve@13.0.x
+
+หลังติดตั้งเสร็จ เช็คเวอร์ชั่นของ serve ดู
+--
+serve --version
+
+ทดสอบรันโปรเจ็กต์ด้วย serve
+---
+serve -s build
+
+-------------------------------------------------------
+วันที่ 2
+-------------------------------------------------------
+การขึ้นโปรเจ็กต์ด้วย Expo CLI
+
+Step 1: เช็คเวอร์ชั่นของ Expo ในเครื่อง
+---
+expo --version
+
+ถ้ายังไม่มีติดตั้งลงไปก่อนด้วยคำสัง
+---
+npm install -g expo-cli
+
+Step 2: คำสั่งขึ้นโปรเจ็กต์ด้วย Expo CLI
+---
+expo init FirstReactNativeExpo
+
+Step 3: ทำการเปลี่ยน path เข้าโปรเจ็กต์
+---
+cd FirstReactNativeExpo
+
+Step 4: รัน Expo ด้วยคำสั่ง
+---
+npm start
+
+Step 5: ลองรันขึ้นอุปกรณ์จริง
+---
+เช็คว่ามีการต่อมือถือกับคอมพิวเตอร์หรือยัง
+---
+adb devices
+
+คำสั่งรันขึ้นมือถือ android
+---
+npm run android
+
+Step 6: ทดสอบรันขึ้น Web App
+---
+npm run web
+
+การขึ้นโปรเจ็กต์ด้วย React Native App ด้วย React Native CLI
+---
+Step 1: คำสั่งสร้างโปรเจ็กต์
+---
+npx react-native init SecondReactApp
+
+Step 2: เปลี่ยน path เข้าไปในโปรเจ็กต์
+---
+cd SecondReactApp
+
+Step 3: Start ตัว Metro (JS Bundle)
+---
+npx react-native start
+
+Step 4: ทดสอบสั่ง Run ขึ้นมือถือ Android
+--
+npx react-native run-android
+
+-------------------------------------------------------
+วันที่ 3
+-------------------------------------------------------
+การขึ้นโปรเจ็กต์ด้วย React Native App ด้วย React Native CLI
+---
+Step 1: คำสั่งสร้างโปรเจ็กต์
+---
+npx react-native init GetStartReactNative
+
+Step 2: เปลี่ยน path เข้าไปในโปรเจ็กต์
+---
+cd GetStartReactNative
+code -r .
+
+Step 3: Start ตัว Metro (JS Bundle)
+---
+npx react-native start
+
+Step 4: ทดสอบสั่ง Run ขึ้นมือถือ Android
+--
+npx react-native run-android
+
+-------------------------------------------------------
+วันที่ 4
+-------------------------------------------------------
+การขึ้นโปรเจ็กต์ด้วย React Native App ด้วย React Native CLI
+---
+Step 1: คำสั่งสร้างโปรเจ็กต์
+---
+npx react-native init RNRestAPI
+
+Step 2: เปลี่ยน path เข้าไปในโปรเจ็กต์
+---
+code RNRestAPI -r
+
+Step 3: Start ตัว Metro (JS Bundle)
+---
+npx react-native start
+
+Step 4: ทดสอบสั่ง Run ขึ้นมือถือ Android
+--
+npx react-native run-android
+
+Step 5: ติดตั้ง Dependency สำหรับทำ Navigation
+---
+จำเป็น
+---
+npm install @react-navigation/native@6.0.x
+npm install @react-navigation/native-stack@6.3.x
+npm install react-native-screens@3.10.x
+npm install react-native-safe-area-context@3.3.x
+
+ส่วนเสริม
+----
+npm install react-native-reanimated@2.2.x
+npm install @react-native-community/masked-view@0.1.x
+npm install react-native-gesture-handler@2.2.x
+
+สำหรับ Tab Navigation
+---
+npm install @react-navigation/bottom-tabs@6.1.x
+
+Step 6: ติดตั้ง react-native-ionicons dependency
+---
+npm install react-native-ionicons@4.6.x
+npx react-native link react-native-ionicons
+
+หาภาพไอคอน
+---
+https://ionic.io/ionicons/v4
+https://icons.expo.fyi/
+https://oblador.github.io/react-native-vector-icons/
+
+Step 7: ติดตั้ง react-native-paper
+---
+npm install react-native-paper@4.11.x
+
+Step 8: การสั่ง build แอพเป็น Release
+---
+npx react-native run-android --variant=release
+
+ไฟล์ apk จะอยู่ที่ android/app/build/outputs/apk/release/app-release.apk
+
+เพิ่มเติม
+----
+การทำ custom font  ใน React Native
+---
+Step 1: เตรียมไฟล์ fonts มาไว้ที่ assets/fonts
+Step 2: จากนั้นสร้างไฟล์ react-native-config.js ที่ root
+---
+module.exports = {
+  project: {
+    ios: {},
+    android: {}, // grouped into "project"
+  },
+  assets: ["./assets/fonts/"], // stays the same
+};
+
+
+Step 3: เพิ่มคำสั่ง Link
+---
+npx react-native link
+
+หากต้องการใช้คำสั่ง npm run android
+---
+ให้ติดตั้ง npm install -g react-native-cli ก่อน
+
+เปลี่ยนฟอนต์ใน android
+---
+สร้างโฟลเดอร์ฟอนต์ใน main/res/font แล้ววางฟอนต์ไว้
+จากนั้นแก้ไขที่ไฟล์ styles.xml 
+---
+<item name="android:fontFamily">@font/notosanthai</item>
+
+เนื้อหาเก็บตก
+-----------------------------------------
+EP 1 ตอนที่ 1
+------------------------------------------
+npx react-native init AfterCourseEP1
+code AfterCourseEP1 -r
+npx react-native run-android
+
+การตรวจสอบขนาดหน้าจอ
+---
+import { useWindowDimensions  } from "react-native"
+
+const size = useWindowDimensions()
+const width = size.width
+const height = size.height
+
+ทิศทางการหมุนหน้าจอ
+---
+ตรวจสอบสถานะการเชื่อมต่อ Internet
+---
+npm install @react-native-community/netinfo
+
+การ link ไปยังแอปอื่นๆ
+---
+npm install react-native-communications
+
+-----------------------------------------
+EP 2 ตอนที่ 2
+------------------------------------------
+npx react-native init AfterCourseEP2
+code AfterCourseEP2 -r
+npx react-native run-android
+
+พิกัดและตำแหน่ง และการทำงานกับแผนที่ Google Map
+----
+npm install react-native-maps
+
+แก้ไขไฟล์ AndroidManifest.xml
+---
+<uses-permission android:name="android.permission.INTERNET" />
+
+<application>
+...
+...
+<!-- Google MAP API KEY -->
+      <meta-data
+        android:name="com.google.android.geo.API_KEY"
+        android:value="API_KEY" />
+
+      <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+
+</application>
+
+<Google_MAP_API_KEY>
+----
+https://developers.google.com/maps/documentation/android-sdk/get-api-key
+
+AIzaSyCIGtg0KFD31JZ1CjKDiu6gm4__vqDKNeE
+
+Google Maps Direction API
+---
+npm install @mapbox/polyline
+
+การจัดเก็บข้อมูลด้วย AsyncStorage
+---
+npm install  @react-native-community/async-storage
+
+Changing the default storage limitation on Android android/gradle.properties
+---
+AsyncStorage_db_size_in_MB=10
+
+-----------------------------------------
+EP 3 ตอนที่ 3
+------------------------------------------
+npx react-native init AfterCourseEP3
+code AfterCourseEP3 -r
+npx react-native run-android
+
+การสแกน Barcode และ QR code
+--
+npm install react-native-camera
+react-native link react-native-camera
+
+npm install react-native-qrcode-scanner
+react-native link react-native-qrcode-scanner
+
+Permission to use the Camera for Android
+---
+<uses-permission android:name="android.permission.CAMERA" />
+<uses-permission android:name="android.permission.VIBRATE"/>
+
+Permission to use the Camera for iOS
+---
+<!-- Required with iOS 10 and higher -->
+<key>NSCameraUsageDescription</key>
+<string>Your message to user when the camera is accessed for the first time</string>
+
+<!-- Required with iOS 11 and higher: include this only if you are planning to use the camera roll -->
+<key>NSPhotoLibraryAddUsageDescription</key>
+<string>Your message to user when the photo library is accessed for the first time</string>
+
+config android android/app/build.gradle
+---
+defaultConfig {
+    ...
+    missingDimensionStrategy "react-native-camera", "general"
+}
