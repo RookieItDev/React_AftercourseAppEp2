@@ -11,7 +11,7 @@ const GoogleMapDirection = () => {
   // สร้างฟังก์ชันสำหรับแสดงเส้น พิกัดและ polyline
   const getDirections = async (startLoc, destinationLoc) => {
     try{
-      const KEY = "AIzaSyCIGtg0KFD31JZ1CjKDiu6gm4__vqDKNeE"
+      const KEY = "YOUR_GOOGLE_MAP_API_KEY"
       let resp = await fetch(
         `https://maps.googleapis.com/maps/api/directions/json?origin=${startLoc}&destination=${destinationLoc}&key=${KEY}`
       )
