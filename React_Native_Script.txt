@@ -278,7 +278,7 @@ npm install react-native-maps
 ----
 https://developers.google.com/maps/documentation/android-sdk/get-api-key
 
-AIzaSyCIGtg0KFD31JZ1CjKDiu6gm4__vqDKNeE
+AIz...
 
 Google Maps Direction API
 ---
